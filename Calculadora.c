@@ -7,29 +7,26 @@ Hacer un algoritmo que pueda ejecutar una suma, una resta, multiplicación y div
 
 int main()
 {
-int a = 0, b = 0, operation = 0;
-int option;
+    int a = 0, b = 0, operation = 0;
+    int option;
+    do{
+        printf("Dime que operación deseas realizar: \n");
+        printf("1.- Suma; \n");
+        printf("2.- Resta: \n");
+        printf("3.- Multiplicación: \n");
+        printf("4.- División; \n");
+        scanf("%d", option);
+        if (option == -1 ) {
+        }
+        printf("Dame los numeros:\n");
+        printf("primer numero: ");
+        scanf("%d", &a);
+        printf("segundo numero: ");
+        scanf("%d", &b);
 
-    printf("Dime que operación deseas realizar: \n);
-    printf("1.- Suma; \n");
-    printf("2.- Resta: \n");
-    printf("3.- Multiplicación: \n");
-    printf("4.- División; \n");
-    scanf("%d", option);
-    break;
-}
 
-do
-{
-    printf("Dame los numeros:\n");
-    printf("primer numero: ");
-    scanf("%d", &a);
-    printf("segundo numero: ");
-    canf("%d", &b);
-}
-
-    switch (option)
-    {
+        switch (option)
+        {
 
         case 1: 
         operation = a + b;
@@ -43,17 +40,18 @@ do
         case 4:
         operation a / b;
         break;
-    }
-    printf("El resultado de la operación es: %d\n", operation);
+        }
+        printf("El resultado de la operación es: %d\n", operation);
 
-    printf("Dime que operación deseas realizar: \n);
-    printf("1.- Suma; \n");
-    printf("2.- Resta: \n");
-    printf("3.- Multiplicación: \n");
-    printf("4.- División; \n");
-    scanf("%d", &option);
-  }
-  while (option != -1);
+        printf("Dime que operación deseas realizar: \n");
+        printf("1.- Suma; \n");
+        printf("2.- Resta: \n");
+        printf("3.- Multiplicación: \n");
+        printf("4.- División; \n");
+        scanf("%d", &option);
 
+        }
+    } while (option != -1);
+    
   return 0;
 }
